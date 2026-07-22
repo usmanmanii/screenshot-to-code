@@ -1,5 +1,18 @@
 {
   "python.analysis.typeCheckingMode": "strict",
-  "python.analysis.extraPaths": ["./backend"],
-  "python.autoComplete.extraPaths": ["./backend"]
+  "python.analysis.extraPaths": [
+    "./backend"
+  ],
+  "python.autoComplete.extraPaths": [
+    "./backend"
+  ],
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
